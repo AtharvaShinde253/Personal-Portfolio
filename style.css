@@ -126,3 +126,13 @@ nav{
 .wrapper{
     padding-inline: 10vw;
 }
+.email{
+    width: 17px;
+    padding-top: 4px;
+}
+.featured-box{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
