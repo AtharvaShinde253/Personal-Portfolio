@@ -123,3 +123,6 @@ nav{
     background: var(--first-color);
     border-radius: 50%;
 }
+.wrapper{
+    padding-inline: 10vw;
+}
