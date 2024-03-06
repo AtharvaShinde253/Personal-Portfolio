@@ -129,6 +129,16 @@ nav{
 .email{
     width: 17px;
     padding-top: 4px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
 }
 .featured-box{
     position: relative;
@@ -159,3 +169,42 @@ nav{
     color: var(--text-color-second);
     margin-block: 20px;
 }
+.typedText{
+    text-transform: capitalize;
+    color: var(--text-color-third);
+}
+.featured-text-info{
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: rgb(112, 112, 180);
+}
+.featured-text-btn{
+    display: flex;
+    gap: 20px;
+}
+.featured-text-btn>.blue-btn{
+    background: rgb(50, 177, 236);
+    color: white;
+}
+.featured-text-btn>.blue-btn:hover{
+    background: rgb(23, 23, 139);
+}
+.social_icons{
+    display: flex;
+    margin-top: 5em;
+    gap: 30px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.icon:hover{
+    color: var(--first-color);
+}
+
