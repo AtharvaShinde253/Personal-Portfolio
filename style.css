@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root{
-    --body-color: rgb(250, 250, 250);
+    --body-color: rgb(185, 217, 227);
     --color-white: rgb(255, 255, 255);
     --text-color-second: rgb(68, 68, 68);
     --text-color-third: rgb(30, 159, 171);
@@ -126,17 +126,7 @@ nav{
 .wrapper{
     padding-inline: 10vw;
 }
-.email{ 
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-}
+
 .featured-box{
     position: relative;
     display: flex;
@@ -198,11 +188,18 @@ nav{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: 0px 6px 9px 0px rgba(41, 179, 206, 0.25);
+    box-shadow: 0px 4px 6px 0px rgba(1, 9, 11, 0.836);
     cursor: pointer;
 }
 .icon:hover{
     color: rgb(152, 76, 224);
+}
+.icon i {
+    transition: transform 0.3s ease;
+}
+
+.icon i:hover {
+    transform: scale(1.2);
 }
 /*--------image ---*/
 .featured-image{
@@ -269,59 +266,6 @@ nav{
     font-size: 20px;
 }
 /*-------------about-----------*/
-.heading{
-    font-size: 8rem;
-    text-align: center;
-    margin: 5rem 0;
-}
-.About{
-    padding: 100px 15px;
-    background: rgb(250, 250, 250);
-}
-.About h2{
-    margin-bottom: 5rem;
-}
-.timeline-items{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-}
-.timeline-items::before{
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background-color: rgb(125, 125, 227);
-    left: calc(50% - 1px);
-}
-.timeline-item{
-    margin-bottom: 40px;
-    width: 100%;
-    position: relative;
-}
-.timeline-item:last-child{
-    margin-bottom: 0;  
-}
-.timeline-item:nth-child(odd){
-    padding-right: calc(50% + 30px);
-    text-align: right;
-}
-.timeline-item:nth-child(even){
-    padding-left: calc(50% + 30px);
-}
-.timeline-dot{
-    height: 21px;
-    width: 21px;
-    background-color: blue;
-    box-shadow: 0 0 25px blue,
-                0 0 50px blue;
-    position: absolute;
-    left: calc(50% - 8px);
-    border-radius: 50%;
-    top: 10px;
-}
 
 
 
