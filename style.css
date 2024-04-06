@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root{
-    --body-color: rgb(185, 217, 227);
+    --body-color: rgb(167, 211, 224);
     --color-white: rgb(255, 255, 255);
     --text-color-second: rgb(68, 68, 68);
     --text-color-third: rgb(30, 159, 171);
@@ -266,6 +266,97 @@ nav{
     font-size: 20px;
 }
 /*-------------about-----------*/
+.resume_container{
+    grid-template-columns: 1fr 5fr;
+}
+.resume_tabs ul{
+    position: sticky;
+    top: 150px;
+    position: -webkit-sticky;
+}
+.resume_tabs ul li a{
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    color: #222;
+    position: relative;
+    transition: .3s;
+}
+.resume_tabs ul li a.current{
+    color: rgb(43, 60, 159);
+    margin-left: 20px;
+    position: relative;
+}
+.resume_tabs ul li a.current::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: rgb(41, 118, 162));
+}
+.page{
+    margin-bottom: 70px;
+}
+.page_heading{
+    font-size: 25px;
+    color: rgb(86, 86, 209);
+    margin-bottom: 25px;
+}
+.resume_wrap{
+    background-color: rgb(125, 157, 168);
+    margin-bottom: 15px;
+    padding: 40px 30px;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    transition: .3s;
+}
+.resume_wrap-icon{
+    background-color: rgb(159, 162, 216);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resume_wrap-icon i{
+    font-size: 25px;
+    color: #fff;
+}
+.resume_wrap-content{
+    width: calc(100% - 10);
+    padding: 0 0 10px 10px;
+}
+.resume_wrap.date{
+    font-weight: 600;
+}
+.resume_wrap-content h4{
+    font-size: 20px;
+}
+.resume_wrap-content .position{
+    font-size: 16px;
+    font-weight: 400;
+}
+.resume_wrap-content p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.resume_wrap:hover{
+    background-color: #3e5d70;
+    color: #faf9ff;
+}
+
+
+
+
+
+
+
+
 
 
 
