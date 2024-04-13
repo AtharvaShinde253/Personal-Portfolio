@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root{
-    --body-color: rgb(167, 211, 224);
+    --body-color: rgb(211, 234, 241);
     --color-white: rgb(255, 255, 255);
     --text-color-second: rgb(68, 68, 68);
     --text-color-third: rgb(30, 159, 171);
@@ -266,13 +266,23 @@ nav{
     font-size: 20px;
 }
 /*-------------about-----------*/
+.resume_container.container.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    overflow: auto;
+}
+.about-image {
+    float: left;
+    width: 200px; 
+    height: 100px; 
+}
 .resume_container{
     grid-template-columns: 1fr 5fr;
 }
 .resume_tabs ul{
     position: sticky;
-    top: 150px;
-    position: -webkit-sticky;
+    top: 0;
 }
 .resume_tabs ul li a{
     font-weight: 700;
@@ -295,7 +305,7 @@ nav{
     transform: translateX(-50%);
     width: 30px;
     height: 2px;
-    background-color: rgb(41, 118, 162));
+    background-color: rgb(41, 118, 162);
 }
 .page{
     margin-bottom: 70px;
@@ -348,6 +358,17 @@ nav{
 .resume_wrap:hover{
     background-color: #3e5d70;
     color: #faf9ff;
+}
+
+/*-----------------skills---------------*/
+.progressBoxs.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.skill-icon {
+    width: 20px; /* adjust as needed */
+    height: 20px; /* adjust as needed */
 }
 
 
@@ -438,11 +459,17 @@ nav{
     .project-box{
         width: 80%;
     }
+    .startt{
+        justify-content: center;
+    }
 }
 /* ----- MEDIA QUERY == 540px--- */
 @media only screen and (max-width: 540px){
     .featured-name{
         font-size: 40px;
+    }
+    .startt{
+        justify-content: center;
     }
     .project-box{
         width: 100%;
