@@ -559,6 +559,12 @@ nav{
     }
 }
 
+@media (max-width: 576px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
+
     
 
 
