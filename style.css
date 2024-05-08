@@ -370,6 +370,13 @@ nav{
     width: 70px; 
     height: 70px; 
 }
+.skill-icon {
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.2);
+}
 /*-----------------about section---------------*/
 @media screen and (max-width: 992px){
     .resume_container {
@@ -402,6 +409,47 @@ nav{
     
 }
 
+
+/*-----------------project---------------*/
+#projects {
+    background-color: rgb(211, 234, 241);
+    padding: 20px 0;
+}
+.container {
+    margin: 0 auto;  
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.project-item {
+    border: 1px solid #191474;
+    padding: 20px;
+    text-align: center;
+}
+.project-item img {
+    width: 100%;
+    height: auto;
+}
+
+.project-item h3 {
+    margin: 20px 0;
+}
+
+.project-item p {
+    margin-bottom: 20px;
+}
+
+.project-item a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
 
 
