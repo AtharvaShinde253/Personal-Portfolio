@@ -367,11 +367,40 @@ nav{
     grid-gap: 20px;
 }
 .skill-icon {
-    width: 20px; /* adjust as needed */
-    height: 20px; /* adjust as needed */
+    width: 70px; 
+    height: 70px; 
+}
+/*-----------------about section---------------*/
+@media screen and (max-width: 992px){
+    .resume_container {
+        grid-template-columns: 1fr;
+    }
+    .resume_tabs{
+        display: none;
+    }
+    .resume_wrap{
+        padding: 20px 15px;
+    }
 }
 
-
+@media screen and (max-width: 576px){
+    .resume_wrap{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .resume_wrap.resume_wrap-icon{
+        margin-bottom: 15px;
+    }
+    .resume_wrap-content{
+        width: 100%;
+    }
+    .progressBoxs {
+        grid-template-columns: 1fr;
+    }
+    
+}
 
 
 
