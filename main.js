@@ -40,3 +40,16 @@ sr.reveal('.featured-text-info',{delay: 200})
 sr.reveal('.featured-text-btn',{delay: 200})
 sr.reveal('.social_icons',{delay: 200})
 sr.reveal('.featured-image',{delay: 300})
+
+sr.reveal('.project-grid',{interval: 200})
+sr.reveal('.top-header',{})
+
+const srLeft = ScrollReveal({
+  origin: 'left',
+  distance: '80px',
+  duration: 2000,
+  reset: true
+})
+
+srLeft.reveal('.about-info',{delay: 100})
+srLeft.reveal('.contact-info',{delay: 100})

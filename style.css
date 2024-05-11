@@ -665,6 +665,7 @@ footer{
     .featured-name{
         font-size: 40px;
     }
+
     .startt{
         justify-content: center;
         
@@ -706,6 +707,10 @@ footer{
 }
 
 @media (max-width: 576px) {
+    
+    .scroll-button {
+        bottom: 50px; /* Adjust as needed */
+    }
     .project-grid {
         grid-template-columns: 1fr; /* 1 column for small screens */
     }
