@@ -19,3 +19,11 @@ function myMenuFunction(){
       navHeader.style.lineHeight = "90px";
     }
   }
+
+  var typingEffect = new Typed(".typedText",{
+    strings : ["Gamer","Coder","Developer"],
+    loop : true,
+    typeSpeed : 100, 
+    backSpeed : 80,
+    backDelay : 2000
+ })
