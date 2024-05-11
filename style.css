@@ -486,8 +486,17 @@ nav{
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i{
-    color: #777;
+    color: #1a2b6f;
     z-index: 2;
+}
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-row .find-me, .contact-row .contact-form {
+    flex: 1;
+    margin: 0 10px;
 }
 
 .form-control{
@@ -533,6 +542,25 @@ textarea{
 .form-button i{
     font-size: 18px;
     rotate: -45deg;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col {
+    flex: 1;
+    margin: 0 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    background: #F8F8F8;
+    padding-block: 40px 60px;
 }
 
 
@@ -640,11 +668,46 @@ textarea{
     .input-field{
         width: 100%;
     }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-info, .contact-info{
+        width: 100%;
+    }
+    .project-container{
+        justify-content: center;
+    }
+    .project-box{
+        width: 80%;
+    }
 }
 
 @media (max-width: 576px) {
     .project-grid {
         grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
+@media (max-width: 576px) {
+    .row {
+        display: block;
+    }
+    .row .col {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
+        width: 100%;
     }
 }
 
