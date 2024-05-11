@@ -216,11 +216,11 @@ nav{
 .about-image {
     float: left;
     width: 200px; 
-    height: 100px; 
+    height: 150px; 
     margin-top: 20px; /* Adjust as needed */
 }
 .image{
-    margin-top: 20px;
+    margin-top: 50px;
     width: 380px;
     height: 380px;
     border-radius: 55% 45% 55% 45%;
@@ -630,7 +630,7 @@ footer{
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
+        margin-top: 100px;
     }
     .image, .image img{
         width: 150px;

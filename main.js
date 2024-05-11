@@ -43,6 +43,8 @@ sr.reveal('.featured-image',{delay: 300})
 
 sr.reveal('.project-grid',{interval: 200})
 sr.reveal('.top-header',{})
+sr.reveal('#about', { delay: 200 });
+sr.reveal('.progressBox .skill-icon', { delay: 200, interval: 100 });
 
 const srLeft = ScrollReveal({
   origin: 'left',
@@ -53,3 +55,35 @@ const srLeft = ScrollReveal({
 
 srLeft.reveal('.about-info',{delay: 100})
 srLeft.reveal('.contact-info',{delay: 100})
+srRight.reveal('.form-control',{delay: 100})
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const icons = document.querySelectorAll('.social_icons .icon');
+  console.log(icons); // Add this line
+  const links = [
+      'https://www.instagram.com/yourusername',
+      'https://www.linkedin.com/in/yourusername',
+      'https://dribbble.com/yourusername',
+      'https://github.com/AtharvaShinde253'
+  ];
+
+  icons.forEach((icon, index) => {
+      icon.innerHTML = `<a href="${links[index]}" target="_blank">${icon.innerHTML}</a>`;
+  });
+});
+
+const sections = document.querySelectorAll('section[id]')
+  function scrollActive() {
+    const scrollY = window.scrollY;
+    sections.forEach(current =>{
+      const sectionHeight = current.offsetHeight,
+          sectionTop = current.offsetTop - 50,
+        sectionId = current.getAttribute('id')
+      if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) { 
+          document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
+      }  else {
+        document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
+      }
+    })
+  }
+  window.addEventListener('scroll', scrollActive)
