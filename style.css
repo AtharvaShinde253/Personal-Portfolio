@@ -209,8 +209,18 @@ nav{
     min-height: 80vh;
     width: 50%;
 }
+.startt {
+    clear: both; /* Clear floats on both sides */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+.about-image {
+    float: left;
+    width: 200px; 
+    height: 100px; 
+    margin-top: 20px; /* Adjust as needed */
+}
 .image{
-    margin: auto 0;
+    margin-top: 20px;
     width: 380px;
     height: 380px;
     border-radius: 55% 45% 55% 45%;
@@ -658,6 +668,11 @@ footer{
     .startt{
         justify-content: center;
         
+    }
+    .startt, .about-image, .image {
+        float: none;
+        max-width: 100%; /* Allow the elements to shrink on small screens */
+        margin: 20px 0; /* Adjust as needed */
     }
     .project-box{
         width: 100%;
