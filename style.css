@@ -95,10 +95,20 @@ nav{
 }
 .nav-link{
     text-decoration: none;
-    color: var(--text-color-second);
+    color: rgb(84, 84, 194);  
     font-weight: 500;
     padding-inline: 15px;
     margin-inline: 20px;
+}
+
+
+.nav-link.active::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 5px;
+    width: 5px;
+    background: blue; /* Change to the desired color */
 }
 .nav-menu-btn{
     display: none;

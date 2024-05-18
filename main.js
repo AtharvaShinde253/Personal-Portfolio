@@ -71,7 +71,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
       icon.innerHTML = `<a href="${links[index]}" target="_blank">${icon.innerHTML}</a>`;
   });
 });
-
+window.addEventListener('scroll', function() {
+  let scrollPosition = window.scrollY;
+  let links = document.querySelectorAll('.nav-link');
+  links.forEach((link) => {
+      let section = document.querySelector(link.hash);
+      if (
+          section.offsetTop <= scrollPosition &&
+          section.offsetTop + section.offsetHeight > scrollPosition
+      ) {
+          link.classList.add('active');
+      } else {
+          link.classList.remove('active');
+      }
+  });
+});
 const sections = document.querySelectorAll('section[id]')
   function scrollActive() {
     const scrollY = window.scrollY;
